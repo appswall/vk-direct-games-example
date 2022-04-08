@@ -25,6 +25,20 @@
           </div>
         </div>
       </div>
+      <div class="tabs-list hide">
+        <div class="tab-item tabs-list__item active" data-tab="vk-bridge-content">VK Bridge</div>
+        <div class="tab-item tabs-list__item" data-tab="api-request-content">Запросы к API</div>
+      </div>
+      <div class="content-wrap vk-bridge-content active hide">
+        <div class="quick-start"><a class="link" href="https://vk.com/dev/games_vk_connect" target="_blank">Общая документация по платформе</a></div>
+        <div class="search-widget">
+          <input class="search-widget__control" name="search-query" placeholder="Введите название метода" onchange="vkDirectGameApp.filterMethods(this)">
+        </div>
+        <div id="methods-list hide"></div>
+      </div>
+      <div class="content-wrap api-request-content hide">
+        <div id="api-requests-list"></div>
+      </div>
     </div>
     <div class="notify-block hide"></div>
   <script type="text/javascript" src="dist/index.js"></script></body>
