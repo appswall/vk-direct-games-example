@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,13 +7,7 @@
     <title>VK Bridge test Direct Games</title>
   </head>
   <body class="body">
-    <header class="header">
-      
-      <div class="apps_options_bar_right apps_divided_links"><span class="divider">|</span><div class="ui_actions_menu_wrap _ui_menu_wrap app_actions_menu_wrap" onmouseover="uiActionsMenu.show(this);" onmouseout="uiActionsMenu.hide(this);">
-  <span class="link_arrowed_bottom">Действия</span>
-  <div class="ui_actions_menu _ui_menu  app_ui_actions_menu"><a class="ui_actions_menu_item" onclick="return Apps.addToMenu(8129185, '34a7119c281c4a650a', 1, this)" id="app_add_to_menu_action" tabindex="0" role="link">Добавить в левое меню</a><a class="ui_actions_menu_item" onclick="Apps.showInviteBox(8129185, '34a7119c281c4a650a')" tabindex="0" role="link">Пригласить друзей</a><a class="ui_actions_menu_item" onclick="return Apps.share(8129185, 227489029)" tabindex="0" role="link">Поделиться</a><div class="ui_actions_menu_sep"></div><a class="ui_actions_menu_item" onclick="Apps.showSettings(this)" id="apps_show_settings" onmouseover="Apps.loadSettings();" tabindex="0" role="link">Настройки</a><a class="ui_actions_menu_item" onclick="return nav.go(this, event)" href="/editapp?id=8129185">Управление игрой</a><a class="ui_actions_menu_item" onclick="return nav.go(this, event)" href="/stats?aid=8129185">Статистика</a></div>
-</div></div>
-      
+    <header class="header"><button class="button" onclick="vkDirectGameApp.send(&quot;VKWebAppShowInviteBox&quot;)">Отправить</button>
     </header>
     <div class="content">
       <div class="header-info">
@@ -40,7 +35,6 @@
         <div class="search-widget">
           <input class="search-widget__control" name="search-query" placeholder="Введите название метода" onchange="vkDirectGameApp.filterMethods(this)">
         </div>
-        <div id="methods-list"></div>
       </div>
       <div class="content-wrap api-request-content">
         <div id="api-requests-list"></div>
