@@ -6,7 +6,7 @@
     <title>VK Bridge test Direct Games</title>
   </head>
   <body class="body">
-    <header class="header"><button class="button" onclick="vkDirectGameApp.send(&quot;VKWebAppShowInviteBox&quot;)">Отправить</button>
+    <header class="header">
     </header>
     <div class="content">
       <div class="header-info">
@@ -21,25 +21,25 @@
           <div class="banner__icon"></div>
           <div class="banner__content">
             <div class="banner__title">Разрешенные права доступа</div>
-            <div class="banner__description"></div>
+            <div class="banner__description"><button class="button" onclick="vkDirectGameApp.send(&quot;VKWebAppShowInviteBox&quot;)">Отправить</button></div>
           </div>
         </div>
       </div>
-      <div class="tabs-list hide">
+      <div class="tabs-list">
         <div class="tab-item tabs-list__item active" data-tab="vk-bridge-content">VK Bridge</div>
         <div class="tab-item tabs-list__item" data-tab="api-request-content">Запросы к API</div>
       </div>
-      <div class="content-wrap vk-bridge-content active hide">
+      <div class="content-wrap vk-bridge-content active">
         <div class="quick-start"><a class="link" href="https://vk.com/dev/games_vk_connect" target="_blank">Общая документация по платформе</a></div>
         <div class="search-widget">
           <input class="search-widget__control" name="search-query" placeholder="Введите название метода" onchange="vkDirectGameApp.filterMethods(this)">
         </div>
         <div id="methods-list hide"></div>
       </div>
-      <div class="content-wrap api-request-content hide">
+      <div class="content-wrap api-request-content">
         <div id="api-requests-list"></div>
       </div>
     </div>
-    <div class="notify-block hide"></div>
+    <div class="notify-block"></div>
   <script type="text/javascript" src="dist/index.js"></script></body>
 </html>
