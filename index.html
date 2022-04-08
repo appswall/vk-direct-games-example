@@ -6,8 +6,8 @@
     <title>VK Bridge test Direct Games</title>
   </head>
   <body class="body">
-    <header class="header">
-    <button class="button" onclick="vkDirectGameApp.send(&quot;VKWebAppShowInviteBox&quot;)">Отправить</button></header>
+    <header class="header"><button class="button" onclick="vkDirectGameApp.send(&quot;VKWebAppShowInviteBox&quot;)">Отправить</button>
+    </header>
     <div class="content">
       <div class="header-info">
         <div class="banner hash-banner hide">
@@ -34,12 +34,12 @@
         <div class="search-widget">
           <input class="search-widget__control" name="search-query" placeholder="Введите название метода" onchange="vkDirectGameApp.filterMethods(this)">
         </div>
-        <div id="methods-list hide"></div>
+        <div id="methods-list"></div>
       </div>
       <div class="content-wrap api-request-content">
         <div id="api-requests-list"></div>
       </div>
     </div>
-    <div class="notify-block"></div>
+    <div class="notify-block hide"></div>
   <script type="text/javascript" src="dist/index.js"></script></body>
 </html>
